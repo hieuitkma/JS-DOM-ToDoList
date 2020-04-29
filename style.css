@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    /* background-color: #eee; */
+}
+.container {
+    width: 100%;
+    margin: 30px auto;
+}
+#logo {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    color: #ff6347;
+    font-size: 40px;
+    font-style: italic;
+    
+}
+#logo i {
+    color: mediumseagreen;
+    margin-right: 20px;  
+}
+#nhap {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#nhap input{
+    border-radius: 10px;
+    width: 70%;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 15px;
+}
+#nhap input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+    border-radius: 10px;
+    background-color: rgb(238, 235, 235);
+}
+#nhap button {
+    background-color: #ff6347;
+    color: white;
+    border-radius: 7px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+#nhap button:hover {
+    transition: all 0.3s;
+    transform: scale(1.2);
+}
+#null {
+    margin-top: 40px;
+    text-align: center;
+}
+#null i {
+    font-size: 25px;
+    color: grey;
+}
+#null span {
+    color: grey;
+    position: relative;
+    bottom: 3px;
+}
+#root {
+    margin: 0 10%;
+}
+#root ul {
+    margin-top: 30px;
+    list-style-type: none;
+}
+#root ul li {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(168, 167, 167);
+    height: 40px;
+}
+#root ul li input {
+    width: 20px;
+    height: 20px;
+    margin-right: 3%;
+}
+#root ul li label {
+    /* font-size: 20px; */
+    margin-right: auto;
+}
+#root ul li i {
+    font-size: 20px;
+    margin-right: 1%;
+    color: rgb(179, 130, 130);
+}
+#root ul li i:hover {
+    color: #ff6347;
+    transform: scale(1.2);
+}
+#show {
+    margin: 0 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+#show span {
+    border: 1px solid blue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 10px 10px;
+}
+#show span:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+#show .default {
+    background-color: blue;
+    color: white;
+}
+.completed {
+    text-decoration: line-through;
+    font-size: 17px;
+    color: rgb(177, 175, 175);
+}
+@media screen and (min-width: 667px) {
+    .container {
+        max-width: 70%;
+    }
+    #logo {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    #nhap {
+        margin-bottom: 10%;
+    }
+    #root ul li input {
+        width: 25px;
+        height: 25px;
+        margin-right: 3%;
+    }
+    #root ul li label {
+        font-size: 18px;
+    }
+    #root ul li i {
+        font-size: 22px;
+        margin-right: 2%;
+        color: rgb(179, 130, 130);
+    }
+    .completed {
+        text-decoration: line-through;
+        font-size: 19px;
+        color: rgb(177, 175, 175);
+    }
+}
+/* @media screen and (min-width: 768) {
+    .container {
+        
+    }
+} */
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    #root ul li input {
+        margin-right: 4%;
+    }
+    #root ul li label {
+        font-size: 20px;
+    }
+    #root ul li i {
+        font-size: 24px;
+        margin-right: 3%;
+        color: rgb(179, 130, 130);
+    }
+    .completed {
+        text-decoration: line-through;
+        font-size: 20px;
+        color: rgb(177, 175, 175);
+    }
+}
